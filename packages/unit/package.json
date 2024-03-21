@@ -1,0 +1,63 @@
+{
+  "name": "@ts-ioc/unit",
+  "version": "4.0.5",
+  "description": "unit testing framework, base on AOP, Ioc container",
+  "es2015": "./fesm2015/unit.js",
+  "esm2015": "./es2015/index.js",
+  "esm5": "./lib/index.js",
+  "fesm5": "./fesm5/unit.js",
+  "module": "./fesm5/unit.js",
+  "main": "./bundles/unit.umd.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "postinstall": "npm prune",
+    "reinstall": "npm cache clean && npm install",
+    "build": "ts-node -r tsconfig-paths/register taskfile.ts"
+  },
+  "keywords": [
+    "unit",
+    "IoC",
+    "AOP",
+    "dependency",
+    "injection",
+    "ts-ioc",
+    "@ts-ioc",
+    "tsioc",
+    "container",
+    "decorator",
+    "autofac",
+    "Inject",
+    "type",
+    "typescript"
+  ],
+  "author": "houjun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhouhoujun/tsioc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhouhoujun/tsioc.git"
+  },
+  "homepage": "https://github.com/zhouhoujun/tsioc/tree/master/packages/unit#readme",
+  "dependencies": {
+    "@types/expect": "^1.20.3",
+    "@types/mocha": "^5.2.5",
+    "@ts-ioc/aop": "^4.0.5",
+    "@ts-ioc/bootstrap": "^4.0.5",
+    "@ts-ioc/core": "^4.0.5",
+    "@ts-ioc/logs": "^4.0.5",
+    "reflect-metadata": "^0.1.12",
+    "tslib": "^1.9.2",
+    "assert": "^1.4.1",
+    "expect": "^23.6.0"
+  },
+  "peerDependencies": {},
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1"
+  }
+}

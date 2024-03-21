@@ -1,0 +1,62 @@
+{
+  "name": "@ts-ioc/unit-console",
+  "version": "4.0.5",
+  "description": "unit testing console reporter",
+  "es2015": "./fesm2015/unit-reporter-console.js",
+  "esm2015": "./es2015/index.js",
+  "esm5": "./lib/index.js",
+  "fesm5": "./fesm5/unit-reporter-console.js",
+  "module": "./fesm5/unit-reporter-console.js",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "postinstall": "npm prune",
+    "reinstall": "npm cache clean && npm install",
+    "build": "ts-node -r tsconfig-paths/register taskfile.ts"
+  },
+  "keywords": [
+    "IoC",
+    "AOP",
+    "dependency",
+    "injection",
+    "ts-ioc",
+    "@ts-ioc",
+    "tsioc",
+    "container",
+    "decorator",
+    "autofac",
+    "Inject",
+    "type",
+    "typescript"
+  ],
+  "author": "houjun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhouhoujun/tsioc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhouhoujun/tsioc.git"
+  },
+  "homepage": "https://github.com/zhouhoujun/tsioc#readme",
+  "dependencies": {
+    "@ts-ioc/aop": "^4.0.5",
+    "@ts-ioc/bootstrap": "^4.0.5",
+    "@ts-ioc/core": "^4.0.5",
+    "@ts-ioc/logs": "^4.0.5",
+    "@ts-ioc/platform-server": "^4.0.5",
+    "@ts-ioc/platform-server-logs": "^4.0.5",
+    "@ts-ioc/platform-server-bootstrap": "^4.0.5",
+    "@ts-ioc/unit": "^4.0.5",
+    "reflect-metadata": "^0.1.12",
+    "chalk": "^2.3.1",
+    "tslib": "^1.9.2",
+    "globby": "^7.1.1"
+  },
+  "peerDependencies": {},
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {}
+}
